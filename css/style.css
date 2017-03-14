@@ -1,0 +1,112 @@
+#titulo {
+    height: 90px;
+    background-color: #cccccc;
+}
+
+#noticias {
+    background-color: #fafafa;
+}
+
+.fondo-form {
+    background-image: url("../img/Horizon-Zero-Dawn-Wallpapers-5.jpg");
+    width: auto;
+    z-index: -1;
+    
+     /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blu {
+    color: #0275d8;
+    margin-top: 10px;
+    font-family: league;
+    
+}
+
+.msg-font {
+    background-color: rgb(235, 238, 244);
+}
+
+#form-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+
+.hideme
+{
+    opacity:0;
+}
+
+
+.navbar {
+    background:transparent;
+}
+
+#footer-font {
+    background-color: rgb(0, 38, 77);
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.card-marg {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-inverse {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@font-face {
+  font-family: 'league';
+  src: url('./../fonts/LeagueGothic-Regular.otf'); 
+  src: local('☺'), url('./../fonts/LeagueGothic-Regular.otf') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubik';
+  src: url('./../fonts/Rubik-Regular.ttf');
+  src: local('☺'), url('./../fonts/Rubik-Regular.ttf') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+
+.col-sm-8 {
+    
+}
+
+h4 {
+    font-family: league;
+}
+
+p {
+    font-family: rubik;
+}
+
+h4 {
+    
+}
+
+
+
+
