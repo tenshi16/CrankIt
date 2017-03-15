@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
         });
     });
     // Usar de uno solo
-    $('.a').slick({
+    $('.card-deck').slick({
         dots: true
         , infinite: true
         , speed: 300
