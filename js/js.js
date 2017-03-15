@@ -17,6 +17,18 @@ jQuery(document).ready(function ($) {
         let sRam = ram.options[ram.selectedIndex].text
         if (sRes == 'Choose...' || sCpu == 'Choose...' || sGpu == 'Choose...' || sRam == 'Choose...') {
             document.getElementById('mensajeValidacion').style.display = 'block'
+            if (sRes !== 'Choose...') {
+                document.getElementById('res').classList.remove('validador')
+            }
+            if (sCpu !== 'Choose...') {
+                document.getElementById('cpu').classList.remove('validador')
+            }
+            if (sGpu !== 'Choose...') {
+                document.getElementById('gpu').classList.remove('validador')
+            }
+            if (sRam !== 'Choose...') {
+                document.getElementById('ram').classList.remove('validador')
+            }
             if (sRes == 'Choose...') {
                 document.getElementById('res').className += ' validador'
             }
@@ -29,9 +41,13 @@ jQuery(document).ready(function ($) {
             if (sRam == 'Choose...') {
                 document.getElementById('ram').className += ' validador'
             }
+
             return false
         }
-        else return true
+        else {
+            document.getElementById('myForm').style.display = 'none'
+            return false
+        }
     });
     /* Every time the window is scrolled ... */
     $(window).scroll(function () {
