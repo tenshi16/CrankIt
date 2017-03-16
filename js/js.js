@@ -73,30 +73,30 @@ jQuery(document).ready(function ($) {
         , slidesToScroll: 4
         , responsive: [
             {
-                breakpoint: 960
+                breakpoint: 1199
                 , settings: {
-                    slidesToShow: 3
-                    , slidesToScroll: 3
+                    slidesToShow: 4
+                    , slidesToScroll: 4
                     , infinite: true
                     , dots: true
                 }
     }
             , {
-                breakpoint: 720
+                breakpoint: 991
+                , settings: {
+                    slidesToShow: 3
+                    , slidesToScroll: 3
+                }
+    }
+            , {
+                breakpoint: 767
                 , settings: {
                     slidesToShow: 2
                     , slidesToScroll: 2
                 }
     }
             , {
-                breakpoint: 540
-                , settings: {
-                    slidesToShow: 1
-                    , slidesToScroll: 1
-                }
-    }
-            , {
-                breakpoint: 480
+                breakpoint: 575
                 , settings: {
                     slidesToShow: 1
                     , slidesToScroll: 1
