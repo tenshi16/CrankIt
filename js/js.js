@@ -7,14 +7,15 @@ jQuery(document).ready(function ($) {
     });
     //Validador custom
     $('#myForm').submit(function () {
-        let res = document.getElementById('res')
-        let cpu = document.getElementById('cpu')
-        let gpu = document.getElementById('gpu')
-        let ram = document.getElementById('ram')
-        let sRes = res.options[res.selectedIndex].text
-        let sCpu = cpu.options[cpu.selectedIndex].text
-        let sGpu = gpu.options[gpu.selectedIndex].text
-        let sRam = ram.options[ram.selectedIndex].text
+        //let breaks in urbe
+        var res = document.getElementById('res')
+        var cpu = document.getElementById('cpu')
+        var gpu = document.getElementById('gpu')
+        var ram = document.getElementById('ram')
+        var sRes = res.options[res.selectedIndex].text
+        var sCpu = cpu.options[cpu.selectedIndex].text
+        var sGpu = gpu.options[gpu.selectedIndex].text
+        var sRam = ram.options[ram.selectedIndex].text
         if (sRes == 'Choose...' || sCpu == 'Choose...' || sGpu == 'Choose...' || sRam == 'Choose...') {
             document.getElementById('mensajeValidacion').style.display = 'block'
             if (sRes !== 'Choose...') {
@@ -55,7 +56,7 @@ jQuery(document).ready(function ($) {
         $('.hideme').each(function (i) {
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            /* If the object is completely visible in the window, fade it it */
+            /* If the object is compvarely visible in the window, fade it it */
             if (bottom_of_window > bottom_of_object) {
                 $(this).animate({
                     'opacity': '1'
